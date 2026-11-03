@@ -16,8 +16,11 @@
     "@nuxt/content": "^3.16.2",
     "@nuxt/image": "2.2.1",
     "@nuxt/ui": "^4.12.0",
+    "@vueuse/nuxt": "^15.0.0",
     "better-sqlite3": "^13.0.3",
+    "motion-v": "^2.10.0",
     "nuxt": "^4.6.3",
+    "shaders": "^4.0.6",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

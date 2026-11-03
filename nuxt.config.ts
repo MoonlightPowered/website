@@ -4,7 +4,9 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/image',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@vueuse/nuxt',
+    'motion-v/nuxt'
   ],
 
   devtools: {
@@ -12,6 +14,18 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  content: {
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  },
+
+  mdc: {
+    highlight: {
+      noApiRoute: false
+    }
+  },
 
   routeRules: {
     '/': { prerender: true }

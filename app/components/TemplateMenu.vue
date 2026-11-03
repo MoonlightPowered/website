@@ -3,13 +3,13 @@ import type { DropdownMenuItem } from '@nuxt/ui'
 
 const items: DropdownMenuItem[] = [{
   label: 'Starter',
-  to: 'https://starter-template.nuxt.dev/',
+  to: 'https://starter-template.nuxt.dev/'
+}, {
+  label: 'Landing',
+  to: 'https://landing-template.nuxt.dev/',
   color: 'primary',
   checked: true,
   type: 'checkbox'
-}, {
-  label: 'Landing',
-  to: 'https://landing-template.nuxt.dev/'
 }, {
   label: 'Docs',
   to: 'https://docs-template.nuxt.dev/'
@@ -51,7 +51,7 @@ const items: DropdownMenuItem[] = [{
       variant="subtle"
       trailing-icon="i-lucide-chevron-down"
       size="xs"
-      class="-mb-[6px] font-semibold rounded-full truncate"
+      class="-mb-[6px] truncate rounded-full font-semibold"
       :class="[open && 'bg-primary/15']"
       :ui="{
         trailingIcon: ['transition-transform duration-200', open ? 'rotate-180' : undefined].filter(Boolean).join(' ')
