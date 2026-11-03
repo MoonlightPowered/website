@@ -64,8 +64,6 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
       >
         <AppLogo class="h-6 w-auto shrink-0" />
       </NuxtLink>
-
-      <TemplateMenu />
     </template>
 
     <UNavigationMenu
