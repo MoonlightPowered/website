@@ -161,6 +161,7 @@ const { copy, copied } = useClipboard()
     <!-- Features -->
     <UPageSection
       id="features"
+      orientation="horizontal"
       :ui="{
         root: 'py-24 sm:py-32 scroll-mt-(--ui-header-height)',
         container: 'max-w-5xl',
@@ -199,27 +200,21 @@ const { copy, copied } = useClipboard()
         </Motion>
       </template>
 
-      <div class="rounded-2xl border border-default bg-default overflow-hidden">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px">
-          <Motion
-            v-for="(feature, index) in page.features.items"
-            :key="feature.title"
-            v-bind="staggerMotion(index)"
+      <div class="rounded-2xl border border-default bg-default">
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.1)"
+          class="inline-block"
+        >
+          <img
+            src="/assets/homepage_screenshot_0.png"
+            width="1920"
+            height="1080"
+            alt="Illustration"
+            class="w-full rounded-lg"
+            loading="lazy"
           >
-            <UPageCard
-              :icon="feature.icon"
-              :title="feature.title"
-              :description="feature.description"
-              class="rounded-none duration-300"
-              to="#"
-              :ui="{
-                leading: 'mb-5 flex size-9 justify-center rounded-lg bg-primary/10',
-                title: 'text-sm tracking-tight',
-                description: 'text-sm leading-relaxed sm:line-clamp-2 lg:line-clamp-3 text-dimmed'
-              }"
-            />
-          </Motion>
-        </div>
+        </Motion>
       </div>
     </UPageSection>
 
