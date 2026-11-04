@@ -7,16 +7,16 @@ const activeSection = ref<string>()
 
 const items = computed(() => [
   {
-    label: 'Features',
-    to: '#features',
-    exactHash: true,
-    active: activeSection.value === 'features'
+    label: 'Software',
+    to: 'software'
   },
   {
-    label: 'Metrics',
-    to: '#metrics',
-    exactHash: true,
-    active: activeSection.value === 'metrics'
+    label: 'Docs',
+    to: 'https://docs.moonlightpowered.com'
+  },
+  {
+    label: 'Contribute',
+    to: 'contribute'
   }
 ])
 
@@ -73,17 +73,18 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
 
     <template #right>
       <UButton
-        label="Sign in"
+        icon="mdi:discord"
         color="neutral"
         variant="ghost"
+        to="https://discord.biquaternions.me"
         class="hidden lg:flex"
       />
       <UButton
-        label="Get started"
+        icon="mdi:github"
         color="neutral"
+        variant="ghost"
+        to="https://github.com/MoonlightPowered"
         class="hidden lg:flex"
-        to="https://ui.nuxt.com"
-        target="_blank"
       />
     </template>
 
