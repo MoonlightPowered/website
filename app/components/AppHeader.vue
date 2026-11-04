@@ -62,7 +62,7 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
         to="/"
         class="focus-visible:outline-3 outline-primary/25 rounded-md p-1 -ms-1"
       >
-        <AppLogo class="h-6 w-auto shrink-0" />
+        <AppLogo class="h-12 w-auto shrink-0" />
       </NuxtLink>
     </template>
 
