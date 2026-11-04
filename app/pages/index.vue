@@ -140,6 +140,7 @@ const { copy, copied } = useClipboard()
         </Motion>
       </template>
 
+      <!-- Idk, someone might trust this in the future, a carousel might work better in that case
       <Motion
         class="max-w-lg mx-auto w-full"
         v-bind="scrollMotion(0.95)"
@@ -154,6 +155,7 @@ const { copy, copied } = useClipboard()
           }"
         />
       </Motion>
+      -->
     </UPageHero>
 
     <!-- Features -->
