@@ -1,20 +1,22 @@
 seo:
-  title: Nuxt Landing Template
-  description: A beautiful and customizable landing page template built with Nuxt UI. Features hero section, animated terminal, metrics, and CTA — ready to deploy.
+  title: Moonlight
+  description: Modern Minecraft software for Legacy communities.
 title: "Modern Software\nFor Legacy communities"
-description: Map your entire system in real-time, surface anomalies before they cascade, and eliminate the dashboards you never needed.
+description: Get the legacy experience you know and love without giving up on modern features and security patches.
 hero:
   headline: "Selenium now released"
   links:
-    - label: Start for free
+    - label: Downloads
       color: primary
       size: xl
-      to: '#'
-    - label: View demo
-      size: xl
+      icon: mdi:download
+      to: 'downloads'
+    - label: Documentation
       color: neutral
+      size: xl
+      icon: mdi:book
       variant: soft
-      to: '#'
+      to: 'https://docs.moonlightpowered.com'
 terminal:
   lines:
     - segments:
