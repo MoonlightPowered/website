@@ -158,9 +158,9 @@ const { copy, copied } = useClipboard()
       -->
     </UPageHero>
 
-    <!-- Features -->
+    <!-- Feeling -->
     <UPageSection
-      id="features"
+      id="feeling"
       orientation="horizontal"
       :ui="{
         root: 'py-24 sm:py-32 scroll-mt-(--ui-header-height)',
@@ -176,7 +176,7 @@ const { copy, copied } = useClipboard()
           v-bind="scrollMotion()"
           class="inline-block"
         >
-          {{ page.features.headline }}
+          {{ page.feeling.headline }}
         </Motion>
       </template>
 
@@ -186,7 +186,7 @@ const { copy, copied } = useClipboard()
           v-bind="scrollMotion(0.1)"
           class="inline-block"
         >
-          {{ page.features.title }}
+          {{ page.feeling.title }}
         </Motion>
       </template>
 
@@ -196,7 +196,7 @@ const { copy, copied } = useClipboard()
           v-bind="scrollMotion(0.2)"
           class="inline-block"
         >
-          {{ page.features.description }}
+          {{ page.feeling.description }}
         </Motion>
       </template>
 

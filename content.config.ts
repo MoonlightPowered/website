@@ -35,7 +35,7 @@ export const collections = {
         title: z.string().nonempty(),
         items: z.array(z.string())
       }),
-      features: z.object({
+      feeling: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
         description: z.string().nonempty()
