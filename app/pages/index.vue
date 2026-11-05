@@ -140,7 +140,7 @@ const { copy, copied } = useClipboard()
         </Motion>
       </template>
 
-      <!-- Idk, someone might trust this in the future, a carousel might work better in that case
+      <!-- TODO: Someone might trust us in the future, a carousel might work better in that case
       <Motion
         class="max-w-lg mx-auto w-full"
         v-bind="scrollMotion(0.95)"
@@ -280,6 +280,7 @@ const { copy, copied } = useClipboard()
     </UPageSection>
 
     <!-- Metrics -->
+    <!-- TODO: No metrics to show at this moment
     <UPageSection
       id="metrics"
       :ui="{
@@ -343,6 +344,7 @@ const { copy, copied } = useClipboard()
         </div>
       </div>
     </UPageSection>
+    -->
 
     <!-- CTA -->
     <UPageCTA
