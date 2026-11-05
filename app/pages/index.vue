@@ -52,8 +52,6 @@ function staggerMotion(index: number = 0) {
     transition: { duration: 0.6, delay: index * 0.08 }
   }
 }
-
-const { copy, copied } = useClipboard()
 </script>
 
 <template>
