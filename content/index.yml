@@ -94,10 +94,10 @@ metrics:
       label: Early warning
       class: "text-warning"
 cta:
-  title: "Ready to stop\nfirefighting?"
-  description: Free for up to 5 services. No credit card. Deploys in under a minute.
-  command: npx telemetry init
+  title: "Ready to start?"
+  description: All our software is free and open source. No hidden payments.
   links:
-    - label: Start for free
+    - label: Get Started
       color: primary
-      to: '#'
+      icon: mdi:rocket-launch
+      to: 'software'

@@ -391,17 +391,6 @@ const { copy, copied } = useClipboard()
             v-bind="link"
             size="xl"
           />
-
-          <UButton
-            :label="page.cta.command"
-            :trailing-icon="copied ? 'i-lucide-copy-check' : 'i-lucide-copy'"
-            color="neutral"
-            variant="subtle"
-            class="font-mono font-light text-toned gap-4"
-            size="xl"
-            :ui="{ trailingIcon: 'size-5' }"
-            @click="copy(page.cta.command)"
-          />
         </Motion>
       </template>
     </UPageCTA>

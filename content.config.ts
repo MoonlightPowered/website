@@ -58,7 +58,6 @@ export const collections = {
       cta: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        command: z.string().nonempty(),
         links: z.array(createLinkSchema())
       })
     })
