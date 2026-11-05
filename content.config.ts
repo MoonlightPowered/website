@@ -61,5 +61,22 @@ export const collections = {
         links: z.array(createLinkSchema())
       })
     })
+  }),
+  software: defineCollection({
+    source: 'software.yml',
+    type: 'page',
+    schema: z.object({
+      selenium: z.object({
+        headline: z.string().optional(),
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        links: z.array(createLinkSchema()),
+        items: z.array(z.object({
+          icon: z.string().nonempty(),
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        }))
+      })
+    })
   })
 }

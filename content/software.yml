@@ -1,0 +1,41 @@
+seo:
+  title: Moonlight | Software
+  description: Software powered by Moonlight.
+headline: "Software"
+title: "Software"
+description: Get information about our software.
+selenium:
+  headline: "Legacy Combat"
+  title: "Selenium"
+  description: Modern replacement for legacy PaperSpigot 1.8 servers.
+  links:
+    - label: Download
+      color: primary
+      size: xl
+      icon: mdi:download
+      to: '/downloads/selenium'
+    - label: Documentation
+      color: neutral
+      size: xl
+      icon: mdi:book
+      variant: soft
+      to: 'https://docs.moonlightpowered.com/selenium'
+  items:
+    - title: Combat
+      description: Keep the combat you love with configurable behaviors.
+      icon: mdi:sword
+    - title: Components
+      description: Access modern text components, colors and objects to make your server unique.
+      icon: mdi:palette
+    - title: Exploit Fixes
+      description: Receive exploit fixes and that are only available in modern versions.
+      icon: mdi:build
+    - title: Network Security
+      description: Make use of modern forwarding to secure your backends.
+      icon: mdi:shield
+    - title: Plugin Support
+      description: Catch up with the community, get support again for the plugins you use.
+      icon: mdi:plug
+    - title: Stability
+      description: Built on top of Paper for maximum stability and plugin compatibility.
+      icon: mdi:attach-file
