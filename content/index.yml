@@ -70,8 +70,12 @@ logos:
     - i-simple-icons-stripe
 features:
   headline: Legacy Combat
-  title: "No more outdated software"
+  title: "Same feeling on legacy clients"
   description: Stay up-to-date on supported versions without giving up on legacy combat mechanics.
+infrastructure:
+  headline: Modern Infrastructure
+  title: "No more outdated software"
+  description: Secure your servers with modern forwarding or make use of modern object components.
 metrics:
   headline: By the numbers
   title: "Built for scale you haven't hit yet."

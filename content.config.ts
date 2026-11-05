@@ -38,12 +38,12 @@ export const collections = {
       features: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        items: z.array(z.object({
-          icon: z.string(),
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        }))
+        description: z.string().nonempty()
+      }),
+      infrastructure: z.object({
+        headline: z.string().optional(),
+        title: z.string().nonempty(),
+        description: z.string().nonempty()
       }),
       metrics: z.object({
         headline: z.string().optional(),

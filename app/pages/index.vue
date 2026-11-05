@@ -218,6 +218,67 @@ const { copy, copied } = useClipboard()
       </div>
     </UPageSection>
 
+    <!-- Infrastructure -->
+    <UPageSection
+      id="infrastructure"
+      orientation="horizontal"
+      :reverse="true"
+      :ui="{
+        root: 'scroll-mt-(--ui-header-height)',
+        container: 'max-w-5xl',
+        headline: 'font-mono font-medium text-xs text-primary uppercase tracking-[0.12em] text-center',
+        title: 'max-w-lg mx-auto',
+        description: 'max-w-md mx-auto text-dimmed'
+      }"
+    >
+      <template #headline>
+        <Motion
+          as="span"
+          v-bind="scrollMotion()"
+          class="inline-block"
+        >
+          {{ page.infrastructure.headline }}
+        </Motion>
+      </template>
+
+      <template #title>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.1)"
+          class="inline-block"
+        >
+          {{ page.infrastructure.title }}
+        </Motion>
+      </template>
+
+      <template #description>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.2)"
+          class="inline-block"
+        >
+          {{ page.infrastructure.description }}
+        </Motion>
+      </template>
+
+      <div class="rounded-2xl border border-default bg-default">
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.1)"
+          class="inline-block"
+        >
+          <img
+            src="/assets/moonlight_content_0.png"
+            width="1920"
+            height="1080"
+            alt="Illustration"
+            class="w-full rounded-lg"
+            loading="lazy"
+          >
+        </Motion>
+      </div>
+    </UPageSection>
+
     <!-- Metrics -->
     <UPageSection
       id="metrics"
